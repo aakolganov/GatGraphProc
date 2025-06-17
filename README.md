@@ -1,5 +1,7 @@
-Helper scripts to process GATEWAY data. 
+Simple workflow to process and visualize the GaTeway graph theory analysis outputs
 
-All the raw data is available at doi: 
+GaTeway paper: https://chemrxiv.org/engage/chemrxiv/article-details/63590093ecdad54aaaed9777
 
-The publication can be read here:
+This workflow is highlighted here: 
+
+https://pubs.rsc.org/en/content/articlelanding/2025/cp/d4cp02764g

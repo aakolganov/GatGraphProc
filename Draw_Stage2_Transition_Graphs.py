@@ -10,7 +10,7 @@ from matplotlib.cm import ScalarMappable
 from networkx.drawing.nx_pydot import read_dot
 
 
-# 1. Functions for processing the .xyz and Gateway output files
+# 1. Helper functions for processing the .xyz and Gateway output files
 
 # Adjusting the script to use version sort (sort -V) for sorting the .xyz files and energy data in the .dat file.
 def natural_sort_key(s):
@@ -197,7 +197,7 @@ def process_dat_file(dat_file_path):
                 groups[int(conf)] = group_id
     return groups
 
-# 2. Functions for creating and processing the transition graph
+# 2. Functions for revising the transition graph
 
 def calculate_relative_positions(energy_map, reference_conformer=1):
     """ Calculates relative positions of conformers based on the reference conformer """

@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-from collections import defaultdict
 
 
 def parse_conf_file(conf_file):
@@ -223,9 +222,9 @@ cp2k_template = """
      LSD  TRUE
  !    MULTIPLICITY 1
      CHARGE 0
-     BASIS_SET_FILE_NAME /gpfs/home4/kolganov/cp2k-2022.2/data/BASIS_MOLOPT_UCL
-     BASIS_SET_FILE_NAME /gpfs/home4/kolganov/cp2k-2022.2/data/BASIS_MOLOPT
-     POTENTIAL_FILE_NAME /gpfs/home4/kolganov/cp2k-2022.2/data/GTH_POTENTIALS 
+     BASIS_SET_FILE_NAME path/to/cp2k-2022.2/data/BASIS_MOLOPT_UCL
+     BASIS_SET_FILE_NAME path/to/cp2k-2022.2/data/BASIS_MOLOPT
+     POTENTIAL_FILE_NAME path/to/cp2k-2022.2/data/GTH_POTENTIALS 
      &MGRID
        CUTOFF 450
        REL_CUTOFF 30
@@ -258,7 +257,7 @@ cp2k_template = """
          DISPERSION_FUNCTIONAL PAIR_POTENTIAL
          &PAIR_POTENTIAL
            TYPE DFTD3(BJ)
-           PARAMETER_FILE_NAME /gpfs/home4/kolganov/cp2k-2022.2/data/dftd3.dat
+           PARAMETER_FILE_NAME path/to/cp2k-2022.2/data/dftd3.dat
            REFERENCE_FUNCTIONAL PBE
          &END PAIR_POTENTIAL
        &END VDW_POTENTIAL

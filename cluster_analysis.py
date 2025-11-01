@@ -1,18 +1,12 @@
-import os
+"""A legacy code for cluster-based analysis of the MD trajectories"""
 
+import os
 import numpy
 import numpy as np
-from sklearn.metrics import silhouette_samples, silhouette_score
+from sklearn.metrics import silhouette_score
 from sklearn import manifold, datasets
-import sklearn.decomposition
-from sklearn.cluster import KMeans
-from sklearn.cluster import DBSCAN
-from sklearn.neighbors import NearestNeighbors
 from sklearn_extra.cluster import KMedoids
-from sklearn import metrics
 import seaborn as sns
-import plotly.graph_objs as go
-import itertools
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
@@ -229,7 +223,7 @@ def clusters_to_CP2K_inps(indexes_md, cuwodir, ends_with, xyz):
                     f.close()
 
 if __name__ == "__main__":
-    directory = "C:\\Users\\akolganov\\OneDrive\\Рабочий стол\\Манускрипты\\Cp2Zr_Al2O3\\CP2K_systematize_Dynamics\\Bare_Silica\\Initial_complex\\All_dynamic_files\\"
+    directory = "C:\\Users\\akolganov\\OneDrive\\Desktop\\Manuscripts\\Cp2Zr_Al2O3\\CP2K_systematize_Dynamics\\Bare_Silica\\Initial_complex\\All_dynamic_files\\"
 
     reference = os.path.join(directory, "expert.xyz")
     #Clustering PhysAds dataaaaa

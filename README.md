@@ -6,6 +6,10 @@ This workflow is highlighted in this publication:
 
 https://pubs.rsc.org/en/content/articlelanding/2025/cp/d4cp02764g
 
+The main paper can be found under a following link:
+
+https://www.sciencedirect.com/science/article/pii/S0021951725005871
+
 The workflow works in the following order:
 
 1. Generate MD data
